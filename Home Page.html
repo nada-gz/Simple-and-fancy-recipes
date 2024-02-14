@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Homepage </title>
+<link rel="icon" type="image/x-icon" href="icon.ico">
+<style>
+body, html {
+  margin: 0; /* no empty space */ 
+}
+
+iframe {
+  margin-top: 48px; /* pushes iframe down otherwise covered by navbar */
+}
+.navbar {
+  top :0;
+  position : fixed; 
+  background-color: #90817D;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #D0C3C0;
+}
+
+.dropdown-content {
+ display: none;
+ position: fixed;
+ background-color: #fcefeb;
+ min-width: 100px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+ z-index: 1;
+}
+.dropdown-content a {
+ float: none;
+ color: black;
+ padding: 12px 16px;
+ display: block;
+ text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #D0C3C0; 
+}
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+</style>
+</head>
+<body>
+ <div class="navbar">
+  <a href="TRIAL.html" target="Frame 2"> Home </a>
+  <a href="sign main.html"> Sign in </a> 
+  <div class="dropdown"> 
+	<button class="dropbtn"> Breakfast 
+	</button>
+	<div class="dropdown-content"> 
+	  <a href="fTamagoyaki.html" target="Frame 2"> Tamagoyaki </a>
+	  <a href="scrambled eggs.html" target="Frame 2"> Scrambled Eggs </a>
+	</div>
+      </div>
+      <div class="dropdown">
+	<button class="dropbtn"> Lunch
+	</button>
+	<div class="dropdown-content">
+	  <a href="Lunch 1.html" target="Frame 2"> Steak </a>
+    <a href="Lunch 2.html" target="Frame 2"> Salmon </a>
+	</div>
+      </div>
+      <div class="dropdown">
+	<button class="dropbtn"> Dinner
+	</button>
+	<div class="dropdown-content">
+	  <a href="Dinner 1.html" target="Frame 2"> Tomato Omlette </a>
+	  <a href="Dinner 2.html" target="Frame 2"> Chicken Tikka </a>
+	  <a href="Dinner 3.html" target="Frame 2"> Avocado Toast </a>
+	</div>
+      </div>
+      <div class="dropdown">
+	<button class="dropbtn"> Salad
+	</button>
+	<div class="dropdown-content">
+	  <a href="salad_details.html" target="Frame 2"> Ceasar Salad </a>
+	</div>
+      </div>
+      <div class="dropdown">
+	<button class="dropbtn"> Drinks
+	</button>
+	<div class="dropdown-content">
+	  <a href="caramel_frappe.html" target="Frame 2"> Caramel Frappe </a>
+	</div>
+      </div>
+  <a href="leave_review.html" target="Frame 2"> Review </a>
+  <a href="about us.html" target="Frame 2"> Contact Us </a>
+</div>
+<iframe name= "Frame 2" src="TRIAL.html" width= 100% height=1000 frameBorder="0"></iframe>
+</body>
+</html>
